@@ -1,6 +1,6 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
-def substring(string . dictionary)
+def substring(string, dictionary)
     string.downcase!
     string_array = string.split
     match_array = []
@@ -21,4 +21,4 @@ result = match_array.zip(count_array).to_h
 
 end
 
-substring ("Howdy partner, sit down! How's it going?", dictionary)
+p substring("Howdy partner, sit down! How's it going?", dictionary)

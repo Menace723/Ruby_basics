@@ -10,7 +10,7 @@ def picker(prices)
 
     prices_hash.each do |k, v|
         c = 1
-        whicle c <= prices_hash.length - prices_hash_keys.index(k) -1 do 
+        while c <= prices_hash.length - prices_hash_keys.index(k) -1 do 
             output_hash[k] << v - prices_hash[k + c]
             c += 1
         end
@@ -25,4 +25,4 @@ def picker(prices)
     buy_day = buy_day + output_hash[buy_day].index(output_hash[buy_day].min) + 1
 end
 
-picker([17, 3, 6, 9, 8, 15, 6, 1, 10])
+ p picker([17, 3, 6, 9, 8, 15, 6, 1, 10])
